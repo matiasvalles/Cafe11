@@ -1,8 +1,24 @@
 {
   "rewrites": [
     {
-      "source": "/api/:match*",
-      "destination": "/api/index.js"
+      "source": "/api/zipnova/quote",
+      "destination": "/api/zipnova-quote"
+    },
+    {
+      "source": "/api/quote",
+      "destination": "/api/zipnova-quote"
+    },
+    {
+      "source": "/api/send-order-email",
+      "destination": "/api/resend/send"
+    },
+    {
+      "source": "/api/merchant/feed.xml",
+      "destination": "/api/merchant/feed"
+    },
+    {
+      "source": "/api/create-preference",
+      "destination": "/api/checkout"
     },
     {
       "source": "/productos",
