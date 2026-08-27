@@ -177,6 +177,7 @@ function generateOrderEmailHtml({
   titleFont,
   paragraphFont,
   style,
+  themeMode,
   isTest = false,
 }) {
   const customerName = order.customerName || order.firstname || 'Cliente';
@@ -194,8 +195,8 @@ function generateOrderEmailHtml({
 
   const fonts = resolveFontConfig({ titleFont, paragraphFont, fontFamily, style });
 
-  const themeMode = reqBody?.themeMode || 'auto';
-  const isExplicitDark = themeMode === 'dark';
+  const resolvedThemeMode = themeMode || style?.themeMode || 'auto';
+  const isExplicitDark = resolvedThemeMode === 'dark';
 
   // Dynamic Theme Colors
   const bgMain = isExplicitDark ? '#09090b' : '#f4f5f7';
@@ -552,6 +553,7 @@ export default async function handler(req, res) {
       titleFont,
       paragraphFont,
       style,
+      themeMode,
       isTest = false,
       customSubject,
     } = req.body || {};
@@ -604,6 +606,7 @@ export default async function handler(req, res) {
       titleFont,
       paragraphFont,
       style,
+      themeMode,
       isTest,
     });
 
