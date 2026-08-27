@@ -7615,6 +7615,22 @@
                   <label class="checkout-label">Correo electrónico</label>
                   <input type="email" id="checkout-email" class="checkout-input" placeholder="tu.email@ejemplo.com" required />
                 </div>
+
+                <div class="checkout-grid-2" style="margin-bottom: 0.85rem;">
+                  <div>
+                    <label class="checkout-label">Nombre</label>
+                    <input type="text" id="checkout-firstname" class="checkout-input" placeholder="Nombre" required />
+                  </div>
+                  <div>
+                    <label class="checkout-label">Apellido</label>
+                    <input type="text" id="checkout-lastname" class="checkout-input" placeholder="Apellido" required />
+                  </div>
+                </div>
+
+                <div style="margin-bottom: 0.85rem;">
+                  <label class="checkout-label">Teléfono de contacto (con código de área)</label>
+                  <input type="tel" id="checkout-phone" class="checkout-input" placeholder="+54 11 4344 3600" required />
+                </div>
                 
                 <label class="checkout-checkbox-label">
                   <input type="checkbox" id="checkout-newsletter" checked />
@@ -7631,7 +7647,7 @@
                 
                 <div class="checkout-tabs" style="margin-bottom: 1.25rem;">
                   <button type="button" id="tab-delivery-ship" onclick="setDeliveryMethod('shipping')" class="checkout-tab-btn ${isShip ? 'active' : ''}">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                     <span>Envío a domicilio</span>
                   </button>
                   <button type="button" id="tab-delivery-pickup" onclick="setDeliveryMethod('pickup')" class="checkout-tab-btn ${!isShip ? 'active' : ''}">
@@ -7646,17 +7662,6 @@
                     <select id="checkout-country" class="checkout-select">
                       <option value="Argentina" selected>Argentina</option>
                     </select>
-                  </div>
-
-                  <div class="checkout-grid-2" style="margin-bottom: 0.85rem;">
-                    <div>
-                      <label class="checkout-label">Nombre</label>
-                      <input type="text" id="checkout-firstname" class="checkout-input" placeholder="Nombre" required />
-                    </div>
-                    <div>
-                      <label class="checkout-label">Apellido</label>
-                      <input type="text" id="checkout-lastname" class="checkout-input" placeholder="Apellido" required />
-                    </div>
                   </div>
 
                   <div style="margin-bottom: 0.85rem;">
@@ -7707,11 +7712,6 @@
                         <option value="Tucumán">Tucumán</option>
                       </select>
                     </div>
-                  </div>
-
-                  <div style="margin-bottom: 1.15rem;">
-                    <label class="checkout-label">Teléfono de contacto (con código de área)</label>
-                    <input type="tel" id="checkout-phone" class="checkout-input" placeholder="+54 11 4344 3600" required />
                   </div>
 
                   <div style="padding-top: 1rem; border-top: 1px solid #f1f5f9;">
