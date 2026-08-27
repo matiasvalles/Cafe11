@@ -558,9 +558,10 @@ export default async function handler(req, res) {
 
     const targetApiKey = (resendConfig?.apiKey || process.env.RESEND_API_KEY || '').trim();
     if (!targetApiKey) {
-      return res.status(400).json({
+      return res.status(200).json({
         success: false,
-        error: 'API Key de Resend no configurada. Agrega tu API Key en la configuración de la tienda o variables de entorno (RESEND_API_KEY).',
+        skipped: true,
+        message: 'Resend no está configurado (falta RESEND_API_KEY en Vercel). El pedido se completó normalmente.',
       });
     }
 
