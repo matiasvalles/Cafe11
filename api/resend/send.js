@@ -228,14 +228,14 @@ function generateOrderEmailHtml({
     const unitPrice = Number(prod.price || prod.unit_price || 0);
     const lineTotal = unitPrice * qty;
     const imgUrl = prod.image || prod.picture_url || (prod.images && prod.images[0]) || '';
-    const imgTag = imgUrl ? `<img src="${imgUrl}" alt="${title}" class="img-thumb" style="width: 48px; height: 48px; min-width: 48px; min-height: 48px; object-fit: cover; border-radius: 8px; margin-right: 12px; vertical-align: middle; border: 1px solid ${imgBorder}; filter: none !important; -webkit-filter: none !important; mix-blend-mode: normal !important; isolation: isolate !important; display: block;" />` : '';
+    const imgTag = imgUrl ? `<img src="${imgUrl}" alt="${title}" width="56" height="56" class="img-thumb" style="width: 56px; height: 56px; max-width: 56px; max-height: 56px; object-fit: cover; border-radius: 8px; vertical-align: middle; border: 1px solid ${imgBorder}; background-color: #ffffff; display: block;" />` : '';
 
     return `
       <tr class="email-table-row" style="border-bottom: 1px solid ${rowBorder};">
         <td style="padding: 12px 6px; text-align: left; vertical-align: middle;">
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
             <tr>
-              ${imgUrl ? `<td style="width: 56px; vertical-align: middle;">${imgTag}</td>` : ''}
+              ${imgUrl ? `<td style="width: 64px; vertical-align: middle; padding-right: 10px;">${imgTag}</td>` : ''}
               <td style="vertical-align: middle;">
                 <strong class="text-heading" style="color: ${textHeading}; font-size: 13px; display: block; line-height: 1.3; font-family: ${fonts.bodyFontStack}; font-weight: 600;">${title}</strong>
                 ${variant}
@@ -318,14 +318,12 @@ function generateOrderEmailHtml({
       font-family: ${fonts.titleFontStack};
     }
 
-    /* Preserve original natural colors for product images, logos and media in both light and dark modes (no negative inversion) */
-    img, .img-thumb, .store-logo, .brand-logo, .product-img, [data-ogsc] img, [data-ogsb] img {
-      filter: none !important;
-      -webkit-filter: none !important;
-      mix-blend-mode: normal !important;
-      isolation: isolate !important;
-      image-rendering: auto !important;
-      color-scheme: light dark !important;
+    img {
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
     }
 
     /* Auto Responsive Dark Mode */
@@ -381,17 +379,6 @@ function generateOrderEmailHtml({
       }
       .img-thumb {
         border-color: #27272a !important;
-        filter: none !important;
-        -webkit-filter: none !important;
-        mix-blend-mode: normal !important;
-        isolation: isolate !important;
-      }
-      img, .store-logo, .brand-logo, .product-img {
-        filter: none !important;
-        -webkit-filter: none !important;
-        mix-blend-mode: normal !important;
-        isolation: isolate !important;
-        color-scheme: light dark !important;
       }
     }
 
@@ -407,7 +394,7 @@ function generateOrderEmailHtml({
     [data-ogsc] .text-muted, [data-ogsb] .text-muted { color: #a1a1aa !important; }
     [data-ogsc] .text-subtle, [data-ogsb] .text-subtle { color: #71717a !important; }
     [data-ogsc] .text-code-val, [data-ogsb] .text-code-val { color: #ffffff !important; }
-    [data-ogsc] img, [data-ogsb] img, [data-ogsc] .img-thumb, [data-ogsb] .img-thumb, [data-ogsc] .store-logo, [data-ogsb] .store-logo { filter: none !important; -webkit-filter: none !important; mix-blend-mode: normal !important; isolation: isolate !important; }
+    
   </style>
   <!--[if mso]>
   <style type="text/css">
@@ -427,7 +414,7 @@ function generateOrderEmailHtml({
             <td class="email-header-box" style="padding: 32px 24px; background: ${headerBg}; border-bottom: 1px solid ${headerBorder}; text-align: center;">
               ${logoUrl ? `
                 <div style="margin-bottom: 10px;">
-                  <img src="${logoUrl}" alt="${storeHeaderTitle}" class="store-logo" style="max-height: 48px; max-width: 180px; object-fit: contain; vertical-align: middle; filter: none !important; -webkit-filter: none !important; mix-blend-mode: normal !important; isolation: isolate !important; display: inline-block;" />
+                  <img src="${logoUrl}" alt="${storeHeaderTitle}" class="store-logo" style="max-height: 48px; max-width: 180px; width: auto; height: auto; object-fit: contain; vertical-align: middle; display: inline-block;" />
                 </div>
               ` : `
                 <h1 class="brand-heading text-heading" style="margin: 0; font-size: 24px; font-weight: 800; color: ${textHeading}; letter-spacing: -0.5px; font-family: ${fonts.titleFontStack};">

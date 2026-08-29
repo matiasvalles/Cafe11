@@ -64,6 +64,20 @@ const PRODUCTS = [
     "proveedor": ""
   },
   {
+    "id": "p-83uap4p",
+    "sku": "SKU-PAC-X4-PAI-317",
+    "barcode": "",
+    "name": "Pack x4 paises - 1kg",
+    "description": "<!-- x-tinymce/html --><p><b>Pack Especialidad: Selección de Orígenes</b></p><p>Una curaduría de cuatro perfiles únicos para los amantes del buen café. Desde la densidad y el dulzor del proceso natural brasileño, hasta la brillantez, frescura y texturas cremosas de los mejores lavados de Colombia, Perú y Honduras.</p><p><b>El Pack contiene:</b></p><ol start=\"1\">\n<li>\n<p><b>Brasil (Alta Mogiana):</b> Natural | Mundo Novo y Catuaí | Cacao, caramelo y frutos secos.</p>\n</li>\n<li>\n<p><b>Colombia (Tolima):</b> Lavado | Castillo | Dulce, nueces, floral y acidez jugosa.</p>\n</li>\n<li>\n<p><b>Perú (Cajamarca):</b> Lavado | Paches, Typica y Catimor | Vainilla, chocolate con leche y caramelo.</p>\n</li>\n<li>\n<p><b>Honduras (Comayagua):</b> Lavado | Parainema | Panela, naranja madura y cuerpo cremoso.</p>\n</li>\n</ol><p><!-- x-tinymce/html -->\n\n\n\n</p><p><b>Variedad, balance y calidad de exportación en un solo combo.</b></p>",
+    "price": 79230,
+    "comparePrice": 0,
+    "stock": 20,
+    "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784393879/c48ee688-f656-4085-8079-6986970e7726_zhso6d.png",
+    "category": "Cafe",
+    "marca": "",
+    "proveedor": ""
+  },
+  {
     "id": "p-6amape7",
     "sku": "SKU-CAF-FR-E12-883",
     "barcode": "",
@@ -73,6 +87,20 @@ const PRODUCTS = [
     "comparePrice": 0,
     "stock": 15,
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390838/9_yuis6l.png",
+    "category": "Máquinas",
+    "marca": "",
+    "proveedor": ""
+  },
+  {
+    "id": "p-lsb0pue",
+    "sku": "SKU-MOL-ITO-CGS-711",
+    "barcode": "",
+    "name": "Molinillo ITOP CGSLD160 64mm Profesional",
+    "description": "<p><iframe style=\"height: auto; width: 100%; aspect-ratio: 640 / 360; pointer-events: none;\" src=\"https://player.cloudinary.com/embed/?cloud_name=dcyhj7pzd&amp;public_id=Video_Project_10_lnzzeq&amp;profile=cld-looping&amp;controls=false&amp;autoplay=true&amp;loop=true\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen=\"\">\n</iframe></p>\n<p>&nbsp;</p>\n<p>Dise&ntilde;ado para quienes buscan una molienda precisa y consistente. Sus muelas planas de 64 mm ofrecen una distribuci&oacute;n uniforme del caf&eacute;, permitiendo obtener extracciones m&aacute;s equilibradas tanto para espresso como para m&eacute;todos filtrados. Potente, silencioso y pensado para un uso exigente.</p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" /></h4>\n<h4 style=\"background-color: #ffffff;\">Ajuste Preciso de Molienda</h4>\n<p data-path-to-node=\"7\">&nbsp;</p>\n<p data-path-to-node=\"6\"><span class=\"\">Lleva tu experiencia cafetera al siguiente nivel con nuestro sistema de </span><strong class=\"\" data-path-to-node=\"6\" data-index-in-node=\"72\">ajuste continuo de molienda de alta precisi&oacute;n</strong><span class=\"\">.</span><span class=\"\"> Dise&ntilde;ado para los amantes del buen caf&eacute;,</span><span class=\"\"> este dial te permite navegar con total fluidez desde una molienda fina hasta una textura gruesa,</span><span class=\"\"> adapt&aacute;ndose a cualquier m&eacute;todo de preparaci&oacute;n con una exactitud milim&eacute;trica de </span><strong class=\"\" data-path-to-node=\"6\" data-index-in-node=\"336\">0,01 mm</strong><span class=\"\">.</span></p>\n<p style=\"background-color: #ffffff;\"><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/df2e3cea-0274-48fc-ae68-a319e73370c1.png\" alt=\"\" /></p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" /></h4>\n<h4>Carcasa Totalmente Met&aacute;lica de una Sola Pieza</h4>\n<p data-path-to-node=\"7\">&nbsp;</p>\n<p data-path-to-node=\"6\">Este molinillo destaca no solo por su rendimiento, sino por su construcci&oacute;n premium con una <strong data-path-to-node=\"6\" data-index-in-node=\"137\">carcasa totalmente met&aacute;lica de alta calidad</strong>, dise&ntilde;ada para convertirse en la pieza central de tu barra de caf&eacute;.</p>\n<p style=\"background-color: #ffffff;\">&nbsp;</p>\n<p style=\"background-color: #ffffff;\" data-pm-slice=\"1 1 []\"><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/6e7960ea-9b5d-4df6-848f-8f11a0e81e4c2.png\" alt=\"\" width=\"1672\" height=\"941\" /></p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" width=\"1500\" height=\"50\" /></h4>\n<h4>Motor de Alta Potencia y Rendimiento Superior</h4>\n<p data-path-to-node=\"7\">&nbsp;</p>\n<p data-path-to-node=\"6\">El coraz&oacute;n del molinillo est&aacute; dise&ntilde;ado para ofrecer una consistencia inigualable y una larga vida &uacute;til. Equipado con un <strong data-path-to-node=\"6\" data-index-in-node=\"127\">Motor de CC de Alta Potencia</strong>, este sistema combina tecnolog&iacute;a avanzada y un dise&ntilde;o interno robusto para garantizar una molienda perfecta, sin importar la dureza del grano.</p>\n<p style=\"background-color: #ffffff;\" data-pm-slice=\"1 1 []\"><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/4bc459ce-b982-4753-807a-13b4fd8a5155.png\" alt=\"\" /></p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" width=\"1500\" height=\"50\" /></h4>\n<p data-pm-slice=\"1 1 []\"><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/10.png\" alt=\"\" width=\"790\" height=\"655\" /><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/20.png\" alt=\"\" width=\"790\" height=\"434\" /><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/30.png\" alt=\"\" width=\"790\" height=\"720\" /><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/31.png\" alt=\"\" width=\"790\" height=\"1343\" /></p>",
+    "price": 847000,
+    "comparePrice": 0,
+    "stock": 15,
+    "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390847/123123123_gernqx.png",
     "category": "Máquinas",
     "marca": "",
     "proveedor": ""
@@ -90,39 +118,11 @@ const PRODUCTS = [
     "category": "Cafe",
     "marca": "",
     "proveedor": ""
-  },
-  {
-    "id": "p-83uap4p",
-    "sku": "SKU-PAC-X4-PAI-317",
-    "barcode": "",
-    "name": "Pack x4 paises - 1kg",
-    "description": "<!-- x-tinymce/html --><p><b>Pack Especialidad: Selección de Orígenes</b></p><p>Una curaduría de cuatro perfiles únicos para los amantes del buen café. Desde la densidad y el dulzor del proceso natural brasileño, hasta la brillantez, frescura y texturas cremosas de los mejores lavados de Colombia, Perú y Honduras.</p><p><b>El Pack contiene:</b></p><ol start=\"1\">\n<li>\n<p><b>Brasil (Alta Mogiana):</b> Natural | Mundo Novo y Catuaí | Cacao, caramelo y frutos secos.</p>\n</li>\n<li>\n<p><b>Colombia (Tolima):</b> Lavado | Castillo | Dulce, nueces, floral y acidez jugosa.</p>\n</li>\n<li>\n<p><b>Perú (Cajamarca):</b> Lavado | Paches, Typica y Catimor | Vainilla, chocolate con leche y caramelo.</p>\n</li>\n<li>\n<p><b>Honduras (Comayagua):</b> Lavado | Parainema | Panela, naranja madura y cuerpo cremoso.</p>\n</li>\n</ol><p><!-- x-tinymce/html -->\n\n\n\n</p><p><b>Variedad, balance y calidad de exportación en un solo combo.</b></p>",
-    "price": 79230,
-    "comparePrice": 0,
-    "stock": 20,
-    "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784393879/c48ee688-f656-4085-8079-6986970e7726_zhso6d.png",
-    "category": "Cafe",
-    "marca": "",
-    "proveedor": ""
-  },
-  {
-    "id": "p-lsb0pue",
-    "sku": "SKU-MOL-ITO-CGS-711",
-    "barcode": "",
-    "name": "Molinillo ITOP CGSLD160 64mm Profesional",
-    "description": "<p><iframe style=\"height: auto; width: 100%; aspect-ratio: 640 / 360; pointer-events: none;\" src=\"https://player.cloudinary.com/embed/?cloud_name=dcyhj7pzd&amp;public_id=Video_Project_10_lnzzeq&amp;profile=cld-looping&amp;controls=false&amp;autoplay=true&amp;loop=true\" width=\"640\" height=\"360\" frameborder=\"0\" allowfullscreen=\"\">\n</iframe></p>\n<p>&nbsp;</p>\n<p>Dise&ntilde;ado para quienes buscan una molienda precisa y consistente. Sus muelas planas de 64 mm ofrecen una distribuci&oacute;n uniforme del caf&eacute;, permitiendo obtener extracciones m&aacute;s equilibradas tanto para espresso como para m&eacute;todos filtrados. Potente, silencioso y pensado para un uso exigente.</p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" /></h4>\n<h4 style=\"background-color: #ffffff;\">Ajuste Preciso de Molienda</h4>\n<p data-path-to-node=\"7\">&nbsp;</p>\n<p data-path-to-node=\"6\"><span class=\"\">Lleva tu experiencia cafetera al siguiente nivel con nuestro sistema de </span><strong class=\"\" data-path-to-node=\"6\" data-index-in-node=\"72\">ajuste continuo de molienda de alta precisi&oacute;n</strong><span class=\"\">.</span><span class=\"\"> Dise&ntilde;ado para los amantes del buen caf&eacute;,</span><span class=\"\"> este dial te permite navegar con total fluidez desde una molienda fina hasta una textura gruesa,</span><span class=\"\"> adapt&aacute;ndose a cualquier m&eacute;todo de preparaci&oacute;n con una exactitud milim&eacute;trica de </span><strong class=\"\" data-path-to-node=\"6\" data-index-in-node=\"336\">0,01 mm</strong><span class=\"\">.</span></p>\n<p style=\"background-color: #ffffff;\"><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/df2e3cea-0274-48fc-ae68-a319e73370c1.png\" alt=\"\" /></p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" /></h4>\n<h4>Carcasa Totalmente Met&aacute;lica de una Sola Pieza</h4>\n<p data-path-to-node=\"7\">&nbsp;</p>\n<p data-path-to-node=\"6\">Este molinillo destaca no solo por su rendimiento, sino por su construcci&oacute;n premium con una <strong data-path-to-node=\"6\" data-index-in-node=\"137\">carcasa totalmente met&aacute;lica de alta calidad</strong>, dise&ntilde;ada para convertirse en la pieza central de tu barra de caf&eacute;.</p>\n<p style=\"background-color: #ffffff;\">&nbsp;</p>\n<p style=\"background-color: #ffffff;\" data-pm-slice=\"1 1 []\"><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/6e7960ea-9b5d-4df6-848f-8f11a0e81e4c2.png\" alt=\"\" width=\"1672\" height=\"941\" /></p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" width=\"1500\" height=\"50\" /></h4>\n<h4>Motor de Alta Potencia y Rendimiento Superior</h4>\n<p data-path-to-node=\"7\">&nbsp;</p>\n<p data-path-to-node=\"6\">El coraz&oacute;n del molinillo est&aacute; dise&ntilde;ado para ofrecer una consistencia inigualable y una larga vida &uacute;til. Equipado con un <strong data-path-to-node=\"6\" data-index-in-node=\"127\">Motor de CC de Alta Potencia</strong>, este sistema combina tecnolog&iacute;a avanzada y un dise&ntilde;o interno robusto para garantizar una molienda perfecta, sin importar la dureza del grano.</p>\n<p style=\"background-color: #ffffff;\" data-pm-slice=\"1 1 []\"><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/4bc459ce-b982-4753-807a-13b4fd8a5155.png\" alt=\"\" /></p>\n<h4><img src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/ChatGPT Image Jul 11, 2026, 03_57_31 PM2.png\" alt=\"\" width=\"1500\" height=\"50\" /></h4>\n<p data-pm-slice=\"1 1 []\"><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/10.png\" alt=\"\" width=\"790\" height=\"655\" /><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/20.png\" alt=\"\" width=\"790\" height=\"434\" /><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/30.png\" alt=\"\" width=\"790\" height=\"720\" /><img style=\"display: block; margin-left: auto; margin-right: auto;\" src=\"https://d1a9qnv764bsoo.cloudfront.net/stores/007/941/162/rte/31.png\" alt=\"\" width=\"790\" height=\"1343\" /></p>",
-    "price": 847000,
-    "comparePrice": 0,
-    "stock": 15,
-    "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390847/123123123_gernqx.png",
-    "category": "Máquinas",
-    "marca": "",
-    "proveedor": ""
   }
 ];
 
 // Helper: Escape XML special characters
-export function escapeXml(unsafe) {
+export export function escapeXml(unsafe) {
   if (unsafe === undefined || unsafe === null) return '';
   const str = String(unsafe);
   return str
@@ -134,7 +134,7 @@ export function escapeXml(unsafe) {
 }
 
 // Helper: Ensure valid absolute RFC 3986 URL with http/https prefix
-export function formatGoogleMerchantUrl(rawUrl, baseUrl) {
+export export function formatGoogleMerchantUrl(rawUrl, baseUrl) {
   if (!rawUrl || typeof rawUrl !== 'string') return baseUrl;
   let trimmed = rawUrl.trim();
   if (trimmed.startsWith('//')) {
