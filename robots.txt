@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap para Google Search Console y motores de búsqueda
+Sitemap: /sitemap.xml
