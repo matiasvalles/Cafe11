@@ -2,7 +2,6 @@
 // Contiene el catálogo embebido en build-time para el feed de Google Merchant.
 // Si cambiás productos, volvé a exportar y redesplegar para actualizar el feed.
 
-// Catálogo embebido en build-time (ver comentario arriba)
 const STORE_NAME = "Cafe 11*";
 const CONFIGURED_STORE_URL = "www.cafe11.com.ar";
 const CURRENCY = "ARS";
@@ -16,6 +15,7 @@ const PRODUCTS = [
     "price": 24900,
     "comparePrice": 0,
     "stock": 20,
+    "status": "active",
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390805/Colombia_mockup_kanpea.png",
     "category": "Cafe",
     "marca": "",
@@ -30,6 +30,7 @@ const PRODUCTS = [
     "price": 20700,
     "comparePrice": 0,
     "stock": 20,
+    "status": "active",
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390807/Brasil_mockup_r1xzxd.png",
     "category": "Cafe",
     "marca": "",
@@ -44,6 +45,7 @@ const PRODUCTS = [
     "price": 23200,
     "comparePrice": 0,
     "stock": 20,
+    "status": "active",
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390807/Honduras_mockup_cmjxdb.png",
     "category": "Cafe",
     "marca": "",
@@ -58,6 +60,7 @@ const PRODUCTS = [
     "price": 21500,
     "comparePrice": 0,
     "stock": 20,
+    "status": "active",
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390807/Peru_mockup_skwfja.png",
     "category": "Cafe",
     "marca": "",
@@ -72,6 +75,7 @@ const PRODUCTS = [
     "price": 79230,
     "comparePrice": 0,
     "stock": 20,
+    "status": "active",
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784393879/c48ee688-f656-4085-8079-6986970e7726_zhso6d.png",
     "category": "Cafe",
     "marca": "",
@@ -86,6 +90,7 @@ const PRODUCTS = [
     "price": 1190000,
     "comparePrice": 0,
     "stock": 15,
+    "status": "active",
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390838/9_yuis6l.png",
     "category": "Máquinas",
     "marca": "",
@@ -100,29 +105,16 @@ const PRODUCTS = [
     "price": 847000,
     "comparePrice": 0,
     "stock": 15,
+    "status": "active",
     "image": "https://res.cloudinary.com/dcyhj7pzd/image/upload/v1784390847/123123123_gernqx.png",
     "category": "Máquinas",
-    "marca": "",
-    "proveedor": ""
-  },
-  {
-    "id": "p-9bhsimh",
-    "sku": "SKU-CAFE-604",
-    "barcode": "",
-    "name": "Cafe",
-    "description": "<!-- x-tinymce/html --><p><br></p>",
-    "price": 24900,
-    "comparePrice": 0,
-    "stock": 20,
-    "image": "",
-    "category": "Cafe",
     "marca": "",
     "proveedor": ""
   }
 ];
 
 // Helper: Escape XML special characters
-export export function escapeXml(unsafe) {
+export function escapeXml(unsafe) {
   if (unsafe === undefined || unsafe === null) return '';
   const str = String(unsafe);
   return str
@@ -134,7 +126,7 @@ export export function escapeXml(unsafe) {
 }
 
 // Helper: Ensure valid absolute RFC 3986 URL with http/https prefix
-export export function formatGoogleMerchantUrl(rawUrl, baseUrl) {
+export function formatGoogleMerchantUrl(rawUrl, baseUrl) {
   if (!rawUrl || typeof rawUrl !== 'string') return baseUrl;
   let trimmed = rawUrl.trim();
   if (trimmed.startsWith('//')) {
@@ -164,7 +156,8 @@ function getBaseUrl(req) {
 export async function feedXmlHandler(req, res) {
   try {
     const baseUrl = getBaseUrl(req);
-    const storeUrl = formatGoogleMerchantUrl(CONFIGURED_STORE_URL || baseUrl, baseUrl);
+    const rawStoreUrl = CONFIGURED_STORE_URL || baseUrl;
+    const storeUrl = formatGoogleMerchantUrl(rawStoreUrl, baseUrl);
 
     res.setHeader('Content-Type', 'application/xml; charset=UTF-8');
     res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -178,13 +171,13 @@ export async function feedXmlHandler(req, res) {
     xml += `    <description>Catálogo de productos de ${escapeXml(STORE_NAME)} para Google Merchant Center</description>\n`;
     xml += `    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>\n`;
 
-    if (PRODUCTS.length === 0) {
-      // Placeholder informativo para que el parser de Google reciba XML válido
-      // mientras todavía no cargaste productos en la tienda.
+    const activeList = PRODUCTS.filter((p) => !p.status || p.status === 'active');
+
+    if (activeList.length === 0) {
       xml += `    <item>\n`;
       xml += `      <g:id>sample-item-1</g:id>\n`;
       xml += `      <g:title>Producto de Muestra</g:title>\n`;
-      xml += `      <g:description>Todavía no hay productos cargados en la tienda. Agregá productos, volvé a exportar y redesplegá para que aparezcan acá.</g:description>\n`;
+      xml += `      <g:description>Todavía no hay productos activos cargados en la tienda. Agregá productos activos, volvé a exportar y redesplegá para que aparezcan acá.</g:description>\n`;
       xml += `      <g:link>${escapeXml(storeUrl)}</g:link>\n`;
       xml += `      <g:image_link>https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800</g:image_link>\n`;
       xml += `      <g:availability>in_stock</g:availability>\n`;
@@ -193,7 +186,7 @@ export async function feedXmlHandler(req, res) {
       xml += `      <g:brand>${escapeXml(STORE_NAME)}</g:brand>\n`;
       xml += `    </item>\n`;
     } else {
-      for (const prod of PRODUCTS) {
+      for (const prod of activeList) {
         const prodId = prod.id || prod.sku || `prod-${Math.random().toString(36).substring(2, 8)}`;
         const title = prod.name || prod.title || 'Producto';
         const desc = prod.description || prod.shortDescription || title;
@@ -202,7 +195,9 @@ export async function feedXmlHandler(req, res) {
         const stock = prod.stock !== undefined ? Number(prod.stock) : 10;
         const availability = stock > 0 ? 'in_stock' : 'out_of_stock';
 
-        const rawProdLink = `${storeUrl}${storeUrl.includes('?') ? '&' : '?'}product=${encodeURIComponent(prodId)}`;
+        // URL canónica exacta a la página HTML del producto
+        const cleanBase = storeUrl.replace(/\/+$/, '');
+        const rawProdLink = `${cleanBase}/producto-${encodeURIComponent(prodId)}.html`;
         const prodLink = formatGoogleMerchantUrl(rawProdLink, baseUrl);
 
         const rawImg =
